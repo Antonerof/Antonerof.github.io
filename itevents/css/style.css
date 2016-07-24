@@ -148,11 +148,16 @@ header{
     width: 280px;
     border-collapse: collapse;
 }
-.datepicker-caption{
+.datepicker__caption{
     text-transform: uppercase;
     color: #fdfdfd;
 }
-.datepicker-caption>a{
+.datepicker-title {
+    font-family: AvenirNextRegular, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 13px; }
+.datepicker__next, .datepicker__prev{
     display: inline-block;
     float: left;
     margin-left: 15px;
@@ -160,30 +165,32 @@ header{
     color: #fdfdfd;
     font-size: 20px;
     padding-bottom: 20px;
+    cursor: pointer;
 }
-.datepicker-caption>a:last-child{
+.datepicker__next{
     float: right;
     margin-right: 20px;
 }
-.datepicker-td a{
+.datepicker__td span{
     color: #7cc576;
     font-family: AvenirNextRegular, sans-serif;
 }
-.not_this_month a{
+.not_this_month span{
     color: #929292;
 }
-.datepicker-td{
+.datepicker__td{
     display: inline-block;
     text-align: center;
     width: 20px;
     margin: 6px;
     border: 2px solid #555555;
+    cursor: pointer;
 }
-@media all and (-webkit-min-device-pixel-ratio:0) { .datepicker-td {
+@media all and (-webkit-min-device-pixel-ratio:0) { .datepicker__td {
     margin-right: 10px;
     margin-bottom: 6px;
 } }
-.datepicker-td+.active{
+.datepicker__td+.active{
     border: 2px solid #f7941d;
 }
 
