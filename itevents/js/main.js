@@ -5,7 +5,7 @@ function getArticleFromJSON() {
     return function (event) {
         var items = [];
         event.preventDefault();
-        $.getJSON('events.json', function (data) {
+        $.getJSON('js/events.json', function (data) {
             $.each(data, function (key, val) {
                 items.push(new Event(val.id, val.title, new Date(val.eventDate), val.address));
             });
@@ -34,7 +34,7 @@ function makeArticle(event){
         + event.eventDate.getHours()
         + ':'
         + event.eventDate.getMinutes()
-        + '</div> <p class="article_location">Киев, Украина</p><p> <a href="#">'
+        + '</div> <p class="location">Киев, Украина</p><p> <a href="#">'
         + event.title
         + '</a></p></article>';
 }
