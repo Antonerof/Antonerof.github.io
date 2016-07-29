@@ -3,7 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+body, html, .wrapper{
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
 ul,ol { list-style:none }
 
 a {
@@ -37,18 +41,8 @@ a {
 }
 .wrapper{
     margin: 0 auto;
-    max-width: 1600px;
     min-width: 1215px;
 }
-.wrapper:after {
-    content: "&nbsp;";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    height: 0;
-    line-height: 0;
-}
-
 
 header{
     background-color: #71b36b;
@@ -99,7 +93,7 @@ header{
     display: none;
 }
 .calendar   {
-    float: left;
+    float: right;
     background-color: #555555;
     width: 47%;
     height: 437px;
@@ -374,13 +368,15 @@ header{
     background-image: url("../img/map.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 562px;
 }
 .main{
     width: 86.9375%;
+    box-sizing: border-box;
     float: left;
-    height: 100%;
+    min-height: 100%;
     margin: 0 6.4375%;
     border-right: 4px solid  #71b36b;
 }
@@ -415,7 +411,7 @@ header{
 .subscriber{
     float: right;
     width: 33.5%;%;
-    height: 170px;
+    /*height: 170px;*/
     background-color: #f7941d;
     text-align: center;
     padding-top: 25px;
@@ -440,8 +436,9 @@ header{
     margin: 10px 0;
 }
 .button{
-    position: absolute;
-    bottom: 34px;
+    width: 82.5%;
+    margin: 0 8.75%;
+    margin-bottom: 34px;
     display: block;
     text-decoration:none;
     text-align:center;
@@ -453,12 +450,12 @@ header{
     background:#71b36b;
     text-transform: uppercase;
     cursor: pointer;
-    margin: 0 8.75%;
     height: 50px;
-    width: 82.5%;
 }
 .search .button{
-    bottom: 25px;
+    width: 100%;
+    margin-top: 29px;
+    margin-bottom: 25px;
     margin-left: 0;
 }
 article{
@@ -466,13 +463,14 @@ article{
     width: 100%;
     width: -webkit-calc(100% - 1px);
     width: calc(100% - 2px);
-    height: 140px;
+    min-height: 140px;
     border: 1px solid #242424;
     font: 14pt AvenirNextRegular;
 }
 article a{
     color: #333333;
     font-size: 18pt;
+    padding-right: 25px;
 }
 .articles{
     width: 100%;
@@ -496,7 +494,7 @@ article a{
     height: 100%;
     width: 220px;
     text-align: center;
-    padding-top: 70px;
+    padding:  70px 0 40px;
 }
 .load_more{
     float: right;
@@ -553,56 +551,7 @@ footer a:last-child{
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
 }
-@media only screen and (max-width: 760px) {
-    .wrapper {
-        max-width: 760px;
-        min-width: 580px;
-    }
-    /*.map{*/
-        /*display: none;*/
-    /*}*/
-    header{
-        height: 1120px;
-    }
-    .logo{
-        width: 100%;
-        height: 310px;
-    }
-    .calendar{
-        width: 100%;
-    }
-    .login{
-        width: 50%;
-        float: left;
-    }
-    .search{
-        width: 50%;
-        float: left;
-    }
-    .login{
-        float: right;
-    }
-    .main {
-        width: 100%;
-        margin: 0;
-        border: 0;
-    }
-    .main_wrapper{
-        width: 100%;
-        min-width: 580px;
-    }
-    .load_more, .subscriber{
-        width: 50%;
-    }
-    .small_logo{
-        width: 50%;
-        margin: 0;
-    }
-    .footer_left{
-        padding: 130px 0 0 2%;
-        width: 48%;
-    }
-}
+
 @media only screen and (max-width: 1215px) and (min-width: 761px) {
     .wrapper {
         max-width: 1215px;
@@ -671,19 +620,24 @@ footer a:last-child{
         width: 140px;
     }
     .main_wrapper{
+        width: 95%;
+    }
+    .subscriber, .load_more{
+        width: 30%;
+    }
+    .small_logo{
+        margin-right: 11%;
+        width: 24.8%;
+    }
+}
+@media only screen and (max-width: 872px){
+    .main_wrapper{
         width: 100%;
     }
     .main {
         width: 90%;
         margin: 0 5%;
         border: 0;
-    }
-    .subscriber, .load_more{
-        width: 30%;
-    }
-    .small_logo{
-        margin-right: 5%;
-        width: 27%;
     }
 }
 @media only screen and (max-width: 872px) and (min-width: 761px) {
@@ -718,15 +672,64 @@ footer a:last-child{
     }
     .small_logo{
         width: 31%;
+        margin-right: 5%;
+    }
+
+}
+@media only screen and (max-width: 761px) and (min-width: 581px) {
+    .wrapper {
+        max-width: 760px;
+        min-width: 580px;
+    }
+    header{
+        height: 1120px;
+    }
+    .logo{
+        width: 100%;
+        height: 310px;
+    }
+    .calendar{
+        width: 100%;
+    }
+    .login{
+        width: 50%;
+        float: left;
+    }
+    .search{
+        width: 50%;
+        float: left;
+    }
+    .login{
+        float: right;
+    }
+
+    .main_wrapper{
+        width: 100%;
+    }
+    .load_more, .subscriber{
+        width: 50%;
+    }
+
+
+}
+@media only screen and (max-width: 761px){
+    .footer_left{
+        padding: 130px 0 0 2%;
+        width: 48%;
+    }
+    .small_logo{
+        width: 50%;
+        margin: 0;
     }
 }
+
 /*For mobiles*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 580px){
     .map, .logo, .today{
         display: none;
     }
     header, .main, footer{
-        width: 400px;
+        max-width: 580px;
     }
     .wrapper{
         min-width: 0px;
@@ -742,6 +745,11 @@ footer a:last-child{
         width: 50px;
         margin-top: -22px;
         margin-left: -160px;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+        border: 0;
     }
     .main_wrapper{
         min-width: 0;
@@ -775,7 +783,7 @@ footer a:last-child{
         position: fixed;
         top: 18%;
         left: 50%;
-        margin-left: -600px;
+        margin-left: -6000px;
         width: 80%;
         height: 292px;
         z-index: 102;
