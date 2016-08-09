@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Портфолио</title>
-    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Портфолио веб-разработчика | Портфолио веб-верстальщика</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
-<script>
-    document.location.href='itevents/';
-</script>
+<div id="fullpage">
+    <div class="section header">
+        <div class="logo">
+            <h1>Антон Ерофеев</h1>
+        </div>
+        <div class="menu">
+            <ul class="menu__list">
+                <li  class="active"><a class="menu__item menu__home" href="#homePage">ГЛАВНАЯ</a></li>
+                <li ><a class="menu__item menu__portfolio" href="#portfolioPage">ПОРТФОЛИО</a></li>
+                <!--<li ><a class="menu__item menu__canido" href="#whatIDoPage">ЧТО Я УМЕЮ</a></li>-->
+                <li ><a class="menu__item menu__contacts" href="#contactPage">СВЯЗЬ СО МНОЙ</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__container">
+                <div class="header__about">
+                    <h1 class="header__hello">Hello</h1>
+                    <p class="header__aboutMe">
+                        Только качественно и в срок - верстка с использованием технологий на любой вкус!
+                        Гарантирую инвидуальный подход к каждому клиенту. Антон.</p>
+                    <a href="" class="header__link button" role="button">Мои работы!</a>
+                </div>
+                <div class="wrapper__bottomBg"></div>
+            </div>
+    
+            <div class="wrapper__bg"></div>
+        </div>
+    
+    
+    </div>
+    <div class="section works">
+        <div class="menu">
+            <ul class="menu__list">
+                <li  class="active"><a class="menu__item menu__home" href="#homePage">ГЛАВНАЯ</a></li>
+                <li ><a class="menu__item menu__portfolio" href="#portfolioPage">ПОРТФОЛИО</a></li>
+                <!--<li ><a class="menu__item menu__canido" href="#whatIDoPage">ЧТО Я УМЕЮ</a></li>-->
+                <li ><a class="menu__item menu__contacts" href="#contactPage">СВЯЗЬ СО МНОЙ</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__container">
+                <div class="works__container">
+                    <h1>Проекты</h1>
+                    <div class="works__item">
+                        <a href="/itevents/index.html">
+                            <img class="works__img"
+                                 src="../img/previews/itevents.png" alt="Image of event's markup">
+                        </a>
+                        <h3 class="works__heading">IT Events</h3>
+                        <p class="works__description">Description of this perfect markup</p>
+                        <a href="" class="works__link">Посмотрите пример!</a>
+                    </div>
+                    <div class="works__item">
+                        <a href="/landing/index.html">
+                            <img class="works__img"
+                                 src="../img/previews/claymore.png" alt="Image of landing's markup">
+                        </a>
+                        <h3 class="works__heading">Landing page</h3>
+                        <p class="works__description">Description of this perfect markup</p>
+                        <a href="" class="works__link">Посмотрите пример!</a>
+                    </div>
+                </div>
+                <div class="wrapper__bottomBg"></div>
+            </div>
+    
+            <div class="wrapper__bg"></div>
+        </div>
+    
+    
+    </div>
+    <div class="section contacts">
+        <div class="menu">
+            <ul class="menu__list">
+                <li  class="active"><a class="menu__item menu__home" href="#homePage">ГЛАВНАЯ</a></li>
+                <li ><a class="menu__item menu__portfolio" href="#portfolioPage">ПОРТФОЛИО</a></li>
+                <!--<li ><a class="menu__item menu__canido" href="#whatIDoPage">ЧТО Я УМЕЮ</a></li>-->
+                <li ><a class="menu__item menu__contacts" href="#contactPage">СВЯЗЬ СО МНОЙ</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__container">
+                <div class="contacts__container">
+                    <form class="contacts__form" id="sendRequest" method="get" action="http://anttoshka.tigrimigri.com/public/get_message">
+                        <div class="form-group">
+                            <label class="sr-only" for="inputName">Ваше имя</label>
+                            <input type="text" class="form-control" id="inputName"
+                                   placeholder="Ваше имя (обязательно)" minlength="2"
+                                   name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="inputPassword">Ваш имейл</label>
+                            <input type="email" class="form-control" id="inputPassword"
+                                   placeholder="Ваш имейл (обязательно)" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="inputBudget">Ожидаемый бюджет</label>
+                            <input type="text" class="form-control" id="inputBudget"
+                                   name="budget" placeholder="Ожидаемый бюджет">
+                        </div>
+                        <textarea class="form-control" rows="3" name="description" placeholder="Описание Вашей работы"></textarea>
+                        <button type="submit" id="submitRequest" class="button contacts__button"
+                                 value="Заказать">Заказать</button>
+                    </form>
+                </div>
+                <div class="wrapper__bottomBg"></div>
+            </div>
+    
+            <div class="wrapper__bg"></div>
+        </div>
+    </div>
 
+</div>
 </body>
+
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src="js/flexibility.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/main.js"></script>
 </html>
