@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>IT events</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="header" id="header">
+        <nav class="main_nav" id="mainnav">
+            <div class="main_nav__container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Claymore</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="menu" id="bs-example-navbar-collapse-1">
+                    <ul class="menu__list">
+                        <li class="active home"><a href="#" >Home</a></li>
+                        <li><a href="#about" >About</a></li>
+                        <li><a href="#services" >Service</a></li>
+                        <li><a href="#feature" >Features</a></li>
+                        <li><a href="#" >Price</a></li>
+                        <li><a href="#contacts" >Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Login via
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            or
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> keep me logged-in
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            New here ? <a href="#"><b>Join Us</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="header__row">
+            <div class="mock">
+                <div class="mock__img"></div>
+            </div>
+            <div class="slider">
+                <h2 class="slider__heading">Quam eleifend metus commodo</h2>
+                <p>luctus at sit amet urna. Quisque non augue tincidunt, egest
+                    as massa non, elementum sem. Suspendisse mollis nulla
+                    eu lorem ultricies dapibus. </p>
+                <div class="buttons">
+                    <button type="button" class="buttons__purchase">Purchase now</button>
+                    <button type="button" class="buttons__learnMore">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about__article">
+            <h3 class="about__heading">About us</h3>
+            <p class="about__text">Sed non massa quis nisl tincidunt posuere sit amet vitae sem. Praesent
+                sed convallis quam. Donec hendrerit neque sit amet tellus ornare et
+                semper lorem lacinia. Suspendisse ac pellentesque odio. Nunc pharetra
+                malesuada nisi ac condimentum. Curabitur porttitor pulvinar </p>
+        </div>
+        <div class="about__img">
+            <div class="about__bigimg"></div>
+            <div class="about__smallimg"></div>
+        </div>
+    
+    </div>
+    <div class="wrapper__services" id="services">
+        <div class="services">
+            <article class="service">
+                <div class="service__img service__img-note"></div>
+                <h3 class="service__heading">Fully Baked up </h3>
+                <p class="service__text">Curabitur tincidunt dapibus odio, eu gravida felis
+                    blandit vel. Vivamus feugiat auctor lorem non
+                    eleifend. Nam eu pellentesque est, vitae
+                    interdum nisi.</p>
+            </article>
+            <article class="service">
+                <div class="service__img service__img-love"></div>
+                <h3 class="service__heading">Build With Love</h3>
+                <p class="service__text">Nullam dignissim felis diam, sed ultricies nisl
+                    ultricies quis. Maecenas feugiat urna ante, et
+                    viverra tellus facilisis ut. In hac habitasse platea
+                    dictumst.</p>
+            </article>
+            <article class="service">
+                <div class="service__img service__img-responsive"></div>
+                <h3 class="service__heading">Fully Responsive</h3>
+                <p class="service__text">Aliquam mattis massa at urna tincidunt ultrices.
+                    Curabitur lobortis ante vulputate, imperdiet felis
+                    a, adipiscing odio aliquam pharetra molestie
+                    mauris</p>
+            </article>
+        </div>
+    </div>
+    <div class="features__wrapper" id="feature">
+        <h2 class="features__heading">Lorem ipsum dolor sit amet</h2>
+        <p class="features__text">consectetur adipiscing elit. Maecenas facilisis ligula non ornare vehicula.</p>
+        <div id="features" class="features carousel slide"  data-interval="false">
+    
+            <!-- Wrapper for slides -->
+            <div class="features__carousel" role="listbox">
+                <div class="item active">
+                    <img src="../img/macbook.png" alt="...">
+                </div>
+                <div class="item">
+                    <img src="../img/macbook.png" alt="...">
+                </div>
+            </div>
+    
+            <!-- Controls -->
+            <a class="features__control features__control-left carousel-control" href="#features" role="button" data-slide="prev">
+                <span class="features__icon features__icon-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="features__control features__control-right carousel-control" href="#features" role="button" data-slide="next">
+                <span class="features__icon features__icon-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="testimonals__wrapper" id="testimonals">
+        <div class="testimonals__heading">
+            <h1 class="testimonals__heading">What People Say</h1>
+        </div>
+        <div class="testimonals__opinion">
+            <div class="testimonals__img"></div>
+            <h3 class="testimonals__opinionHeading">Excepteur sint occaecat</h3>
+            <p class="testimonals__text">Sed non massa quis nisl tincidunt posuere sit
+                amet vitae sem. Praesent sed convallis quam.</p>
+        </div>
+        <div class="testimonals__opinion">
+            <div class="testimonals__img"></div>
+            <h3 class="testimonals__opinionHeading">Excepteur sint occaecat</h3>
+            <p class="testimonals__text">Sed non massa quis nisl tincidunt posuere sit
+                amet vitae sem. Praesent sed convallis quam.</p>
+        </div>
+        <div class="testimonals__opinion">
+            <div class="testimonals__img"></div>
+            <h3 class="testimonals__opinionHeading">Excepteur sint occaecat</h3>
+            <p class="testimonals__text">Sed non massa quis nisl tincidunt posuere sit
+                amet vitae sem. Praesent sed convallis quam.</p>
+        </div>
+        <div class="testimonals__opinion">
+            <div class="testimonals__img"></div>
+            <h3 class="testimonals__opinionHeading">Excepteur sint occaecat</h3>
+            <p class="testimonals__text">Sed non massa quis nisl tincidunt posuere sit
+                amet vitae sem. Praesent sed convallis quam.</p>
+        </div>
+        <div class="testimonals__opinion">
+            <div class="testimonals__img"></div>
+            <h3 class="testimonals__opinionHeading">Excepteur sint occaecat</h3>
+            <p class="testimonals__text">Sed non massa quis nisl tincidunt posuere sit
+                amet vitae sem. Praesent sed convallis quam.</p>
+        </div>
+        <div class="testimonals__opinion">
+            <div class="testimonals__img"></div>
+            <h3 class="testimonals__opinionHeading">Excepteur sint occaecat</h3>
+            <p class="testimonals__text">Sed non massa quis nisl tincidunt posuere sit
+                amet vitae sem. Praesent sed convallis quam.</p>
+        </div>
+    </div>
+    <div class="contacts__wrapper" id="contacts">
+        <div class="contacts">
+            <div class="contacts__contact">
+                <address class="contact">
+                    <h3 class="contact__heading">Curabitur ornare neque</h3>
+                    <p class="contact__text">id sagittis commodo. Vivamus rhoncus feugiat leo id dictum. Nulla
+                        fermentum nibh eu velit molestie ultricies. Curabitur non gravida urna,
+                        at varius tortor. Donec feugiat, nisl ultrices adipiscing pharetra, augue
+                        lorem pharetra tortor, non tincidunt urna diam in libero. Nam et neque
+                        ut nisi consectetur tempor. Maecenas gravida est eu nisi dignissim
+                        gravida. Proin mollis sodales ullamcorper.</p>
+    
+                    <span class="contact__location">venenatis neque sit amet ante aliquam sollicitudin</span>
+                    <a href="tel:0888-7738-21" class="contact__phone">0888-7738-21</a><span>/</span><a
+                        href="tel:0977-333-222-111"
+                        class="contact__phone-second">0977-333-222-111</a>
+                    <a href="mailto:parturient@montes.com" class="contact__mail">parturient@montes.com</a>
+                </address>
+            </div>
+            <div class="contacts__form">
+    
+                <form class="contact-form">
+                    <div class="contact-form__name">
+                        <input class="contact-form__input" type="text" id="name" placeholder="your name">
+                    </div>
+                    <div class="contact-form__email">
+                        <input class="contact-form__input" type="text" id="email" placeholder="your email">
+                    </div>
+                    <select class="selectpicker" data-width="100%" data-style="contact-form__select" title="your subject">
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                    </select>
+                    <textarea class="contact-form__area" placeholder="your message" id="message" rows="10"></textarea>
+                    <button class="contact-form__reset">Reset</button>
+                    <button class="contact-form__submit">Submit</button>
+                </form>
+            </div>
+            <div class="contacts__tracery"></div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <p class="footer__copyright">Copyright 2013-2014 @andreyyan, All right reserved.</p>
+    </footer>
+</div>
+</body>
+
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src="js/flexibility.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/main.js"></script>
+</html>
