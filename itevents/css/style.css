@@ -458,7 +458,7 @@ header{
     margin-bottom: 25px;
     margin-left: 0;
 }
-article{
+.article{
     float: left;
     width: 100%;
     width: -webkit-calc(100% - 1px);
@@ -467,7 +467,7 @@ article{
     border: 1px solid #242424;
     font: 14pt AvenirNextRegular;
 }
-article a{
+.article a{
     color: #333333;
     font-size: 18pt;
     padding-right: 25px;
@@ -754,13 +754,13 @@ footer a:last-child{
     .main_wrapper{
         min-width: 0;
     }
-    article{
+    .article{
         font-size: 11pt;
     }
     .article_time{
         width: 20%;
     }
-    article a{
+    .article a{
         font-size: 12pt;
     }
 
