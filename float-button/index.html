@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Кнопка</title>
+
+    <link id="css_ll" rel="stylesheet" href="assets/css/eaFloatButtonFLeftBLeft.css">
+    <link id="css_rl" rel=" stylesheet" href="assets/css/eaFloatButtonFRightBLeft.css">
+    <link id="css_lr" rel=" stylesheet" href="assets/css/eaFloatButtonFLeftBRight.css">
+    <link id="css_rr" rel=" stylesheet" href="assets/css/eaFloatButtonFRightBRight.css">
+    <link rel=" stylesheet" href="assets/css/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="description">
+    <h1>Плавающая кнопка с выезжающей формой</h1>
+    <p class="info">Только как пример, радиокнопки переключают варианты расположения</p>
+    <p>Данная страница сделана только для показа возможностей расположения кнопки и формы.</p>
+    <ul>
+        <li>Табы формы кликабельны. </li>
+        <li>Нажатия на маленькие вслывающие кнопки открывают нужный таб.</li>
+        <li>нажатие на иконку соцсети ведет на переход на соц.сеть (возможен переход по нужному URL</li>
+    </ul>
+
+
+</div>
+<div class="controls">
+    <div class="controls__button"><h2>Расположение кнопки:</h2>
+        <label><input class="js-form" name="button" type="radio" value="left" checked>Слева</label>
+        <label><input class="js-form" name="button" type="radio" value="right">Справа</label>
+    </div>
+    <div class="controls__form">
+        <h2>Расположение формы:</h2>
+        <label><input  name="form" type="radio" value="left" checked>Слева</label>
+        <label><input name="form" type="radio" value="right">Справа</label>
+    </div>
+    <div class="controls__sign">
+        <h2>Подписи к кнопкам</h2>
+        <label><input name="label" type="radio" value="1" checked>Включить</label>
+        <label><input name="label" type="radio" value="0">Выключить</label>
+    </div>
+</div>
+
+<div id="eaFloatButton" class="eaFloatButton">
+    <div id="eaFloatButton-phone" class="eaFloatButton__above" data-form="phone">
+        <div class="eaFloatButton__label">Обратный звонок</div>
+        <div class="eaFloatButton__circle eaFloatButton__circle--phone" ><i class="fa fa-phone" aria-hidden="true"></i></div>
+    </div>
+    <div id="eaFloatButton-email" class="eaFloatButton__above" data-form="email">
+        <div class="eaFloatButton__label">Написать на e-mail</div>
+        <div class="eaFloatButton__circle eaFloatButton__circle--email"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+    </div>
+    <div id="eaFloatButton-quick" class="eaFloatButton__above" data-form="quick" data-src="https://vk.com/anton.yerofeiev">
+        <div class="eaFloatButton__label">Вконтакте</div>
+        <div class="eaFloatButton__circle eaFloatButton__circle--quick"><i class="fa fa-user " aria-hidden="true"></i></div>
+    </div>
+
+    <div id="eaFloatButton__main" class="eaFloatButton__main">
+        <div class="eaFloatButton__icons">
+            <span class="eaFloatButton__icon eaFloatButton__icon--phone eaFloatButton__icon--show"><i
+                    class="fa fa-phone" aria-hidden="true"></i></span>
+            <span class="eaFloatButton__icon eaFloatButton__icon--email"><i class="fa fa-envelope"
+                                                                            aria-hidden="true"></i></span>
+            <span class="eaFloatButton__icon eaFloatButton__icon--quick"><i class="fa fa-user " aria-hidden="true"></i></span>
+
+        </div>
+    </div>
+</div>
+
+<div id="eaFormOverlay"></div>
+<div class="eaForm" id="eaForm">
+    <div class="eaForm__close"><i class="fa fa-times" aria-hidden="true"></i></div>
+    <div class="eaForm__tabs">
+        <div class="eaFloatButton__circle eaFloatButton__circle--tabs" data-form="email"><i class="fa fa-envelope"
+                                                                           aria-hidden="true"></i></div>
+        <div class="eaFloatButton__circle eaFloatButton__circle--tabs" data-form="phone"><i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="eaFloatButton__circle eaFloatButton__circle--tabs" data-src="https://vk.com/anton.yerofeiev" data-form="quick"><i class="fa fa-user " aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="eaForm__container eaForm__container--phone">
+
+        <p class="eaForm__heading">Заказ обратного звонка</p>
+        <p class="eaForm__describe">Оставьте нам свои контактные данные<br/> и наши менеджеры ответят на Все ваши
+            вопросы</p>
+        <form class="form-container">
+            <label class="eaForm__title">
+                <input class="eaForm__field" type="text" name="formCallFirstname" placeholder="Имя"/>
+            </label>
+            <label class="eaForm__title">
+                <input class="eaForm__field" type="text" name="formCallPhone" placeholder="Телефон"/>
+            </label>
+            <div class="eaForm__submit">
+                <input class="eaForm__button" type="submit" value="Перезвоните мне"/>
+            </div>
+        </form>
+    </div>
+    <div class="eaForm__container eaForm__container--email">
+        <p class="eaForm__heading">Напишите нам!</p>
+        <p class="eaForm__describe">Оставьте нам свои контактные данные<br/> и наши менеджеры ответят на Все ваши
+            вопросы</p>
+        <form class="form-container">
+            <label class="eaForm__title">
+                <input  class="eaForm__field" type="email" name="formCallFirstname" placeholder="Имя"/>
+            </label>
+
+            <label class="eaForm__title">
+                <input class="eaForm__field" type="email" name="formCallPhone" placeholder="E-mail"/>
+            </label>
+            <label class="eaForm__title">
+                <textarea  class="eaForm__field eaForm__text" name="formCallDescription"
+                          placeholder="Сообщение"></textarea>
+            </label>
+
+            <div class="eaForm__submit">
+                <input class="eaForm__button" type="submit" value="Отправить сообщение"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://use.fontawesome.com/b28f28708c.js"></script>
+<script src="assets/js/eaFloatButton.js"></script>
+</body>
+</html>
